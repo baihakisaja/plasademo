@@ -107,7 +107,7 @@
 <script>
     $(function () {
         const port = "3000";
-        const socketIoAddress = `http://192.168.43.32:${port}`;
+        const socketIoAddress = `https://plasa.herokuapp.com:${port}`;
         const socket = io(socketIoAddress);
         socket.on('reload', () => {
             swal("Pemberitahuan!", "Ada antrian masuk", "success");
